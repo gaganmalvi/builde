@@ -40,6 +40,12 @@ export USE_CCACHE=1
 # for no limit.
 export CCACHE_SIZE=50G
 
+# Clean artifacts output after each build
+export CLEAN_AFTER_BUILD=true
+
+# If you want to preserve old ZIPs set this to 'false'
+export CLEAN_OUTDIR=false
+
 # Environment for the LineageOS branches name
 # See https://github.com/LineageOS/android_vendor_cm/branches for possible options
 export BRANCH_NAME='v1-pie'
@@ -75,16 +81,10 @@ export BUILD_OVERLAY=false
 # Clone the full LineageOS mirror (> 200 GB)
 export LOCAL_MIRROR=false
 
-# If you want to preserve old ZIPs set this to 'false'
-export CLEAN_OUTDIR=false
-
 # Change this cron rule to what fits best for you
 # Use 'now' to start the build immediately
 # For example, '0 10 * * *' means 'Every day at 10:00 UTC'
 export CRONTAB_TIME='now'
-
-# Clean artifacts output after each build
-export CLEAN_AFTER_BUILD=false
 
 # Provide root capabilities builtin inside the ROM (see http://lineageos.org/Update-and-Build-Prep/)
 export WITH_SU=false
@@ -144,20 +144,6 @@ export OPENDELTA_BUILDS_JSON=''
 #  * end.sh, run at the very end
 # Each script will be run in $SRC_DIR and must be owned and writeable only by
 # root
-
-# Create Volume entry points
-############################
-# VOLUME $MIRROR_DIR
-# VOLUME $SRC_DIR
-# VOLUME $TMP_DIR
-# VOLUME $CCACHE_DIR
-# VOLUME $ZIP_DIR
-# VOLUME $LMANIFEST_DIR
-# VOLUME $DELTA_DIR
-# VOLUME $KEYS_DIR
-# VOLUME $LOGS_DIR
-# VOLUME $USERSCRIPTS_DIR
-# VOLUME /root/.ssh
 
 # Create missing directories
 ############################
