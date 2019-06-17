@@ -46,6 +46,10 @@ export CLEAN_AFTER_BUILD=true
 # If you want to preserve old ZIPs set this to 'false'
 export CLEAN_OUTDIR=false
 
+# Include proprietary files, downloaded automatically from github.com/TheMuppets/
+# Only some branches are supported
+export INCLUDE_PROPRIETARY=false
+
 # Environment for the LineageOS branches name
 # See https://github.com/LineageOS/android_vendor_cm/branches for possible options
 export BRANCH_NAME='v1-pie'
@@ -70,10 +74,6 @@ export OTA_URL=''
 # User identity
 export USER_NAME='user'
 export USER_MAIL='user@email.edu'
-
-# Include proprietary files, downloaded automatically from github.com/TheMuppets/
-# Only some branches are supported
-export INCLUDE_PROPRIETARY=false
 
 # Mount an overlay filesystem over the source dir to do each build on a clean source
 export BUILD_OVERLAY=false
