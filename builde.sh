@@ -48,11 +48,11 @@ export CLEAN_OUTDIR=false
 
 # Include proprietary files, downloaded automatically from github.com/TheMuppets/
 # Only some branches are supported
-export INCLUDE_PROPRIETARY=false
+export INCLUDE_PROPRIETARY=true
 
 # Environment for the LineageOS branches name
 # See https://github.com/LineageOS/android_vendor_cm/branches for possible options
-export BRANCH_NAME='v1-pie'
+export BRANCH_NAME='v1-oreo'
 
 # Environment for the device list (separate by comma if more than one)
 # eg. DEVICE_LIST=hammerhead,bullhead,angler
