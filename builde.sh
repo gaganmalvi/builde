@@ -72,8 +72,8 @@ export MIRROR=''
 export OTA_URL=''
 
 # User identity
-export USER_NAME='malvigagan'
-export USER_MAIL='gaganmalvi@e.email'
+export USER_NAME='user'
+export USER_MAIL='user@email.edu'
 
 # Mount an overlay filesystem over the source dir to do each build on a clean source
 export BUILD_OVERLAY=false
