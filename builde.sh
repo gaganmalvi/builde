@@ -38,7 +38,7 @@ export USE_CCACHE=1
 # ccache maximum size. It should be a number followed by an optional suffix: k,
 # M, G, T (decimal), Ki, Mi, Gi or Ti (binary). The default suffix is G. Use 0
 # for no limit.
-export CCACHE_SIZE=50G
+export CCACHE_SIZE=15G
 
 # Clean artifacts output after each build
 export CLEAN_AFTER_BUILD=true
@@ -52,11 +52,11 @@ export INCLUDE_PROPRIETARY=true
 
 # Environment for the LineageOS branches name
 # See https://github.com/LineageOS/android_vendor_cm/branches for possible options
-export BRANCH_NAME='v1-oreo'
+export BRANCH_NAME='v1-nougat'
 
 # Environment for the device list (separate by comma if more than one)
 # eg. DEVICE_LIST=hammerhead,bullhead,angler
-export DEVICE_LIST='s2'
+export DEVICE_LIST='armani'
 
 # Release type string
 export RELEASE_TYPE='UNOFFICIAL'
@@ -72,8 +72,8 @@ export MIRROR=''
 export OTA_URL=''
 
 # User identity
-export USER_NAME='user'
-export USER_MAIL='user@email.edu'
+export USER_NAME='malvigagan'
+export USER_MAIL='gaganmalvi@e.email'
 
 # Mount an overlay filesystem over the source dir to do each build on a clean source
 export BUILD_OVERLAY=false
